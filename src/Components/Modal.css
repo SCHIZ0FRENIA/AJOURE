@@ -1,0 +1,100 @@
+.App {
+  width: 500px;
+  border-radius: 30px;
+  padding: 40px;
+  background-color: #fff;
+  position: fixed;
+  margin: auto;
+  left:0;
+  right:0;
+  top: 10vh;
+  z-index: 1000;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.7vh;
+  text-align: center;
+  color: #EAFFFD;
+  border: hidden;
+  margin-bottom: 4px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(30deg, #6B0C97 0%, #500971 51%, #6B0C97 100%);
+  background-size: 200% auto;
+  transition: .5s;
+  cursor: pointer;
+}
+
+li:hover {
+  background-position: right center;
+}
+
+.result {
+  border: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.result svg {
+  margin: auto 0;
+  height: 7vh;
+}
+
+.result button {
+  text-decoration: none;
+  display: inline-block;
+  color: #EAFFFD;
+  border: hidden;
+  padding: 20px 40px;
+  border-radius: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(30deg, #6B0C97 0%, #500971 51%, #6B0C97 100%);
+  background-size: 200% auto;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.result button:hover {
+  background-position: right center;
+}
+
+.overlay {
+  left: 0;
+  top:0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 500;
+}
+
+h1 {
+  margin-bottom: 2vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 10px 0;
+}
