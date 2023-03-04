@@ -1,0 +1,25 @@
+.first {
+    background-color: #36064C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10vh;
+}
+
+.head{
+    margin-top: 40vh;
+    margin-left: 10vw;
+}
+
+.greeting {
+    color: #EAFFFD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 4.5vw;
+}
+
+.first img {
+    height: 90vh;
+    justify-self: flex-end;
+}
+

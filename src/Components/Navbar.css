@@ -1,0 +1,45 @@
+.navbar {
+    background-color: rgba(54, 6, 76, 0.9);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 300;
+}
+
+.image {
+    height: 10vh;
+}
+
+.logo {
+    margin-left: 5vw;
+    height: 10vh;
+    cursor: pointer;
+}
+
+.menu {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.opt {
+    font-size: 1vw;
+    margin-bottom: auto;
+    margin-top: auto;
+    color: #EAFFFD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.opt:hover {
+    color: #ffffff;
+}
+

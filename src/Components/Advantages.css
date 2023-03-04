@@ -1,0 +1,93 @@
+.second {
+    height: 150vh;
+    padding: 5vw 7.5vw 0 7.5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #36064C;
+}
+
+.label1{
+    width: 80%;
+    margin: auto;
+    font-weight: 600;
+    font-size: 3vh;
+}
+.label2{
+    width: 80%;
+    font-weight: 400;
+    margin: auto;
+    animation: show 1s 1 forwards;
+}
+
+.info {
+    background-image: url("public/logo-purple.png");
+    background-position: center center;
+    background-size:100% 100%;
+    height: 40vh;
+    width: 35vw;
+    margin: 0 5vw 5vw 2.5vw;
+    text-decoration: none;
+    color: #EAFFFD;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #780EAA;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@keyframes show {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes showW {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.on {
+    animation: on .7s 1 forwards;
+}
+
+@keyframes on {
+    from{
+        background: #43085E;
+        color: #EAFFFD;
+    }
+    to{
+        background: #EAFFFD;
+        color: black;
+    }
+}
+
+.out   {
+    animation: out .7s 1 forwards;
+}
+
+@keyframes out {
+    from{
+        background: #EAFFFD;
+        color: black;
+        opacity: 0;
+    }
+    to{
+         background: #43085E;
+         color: #EAFFFD;
+         opacity: 1;
+    }
+}
