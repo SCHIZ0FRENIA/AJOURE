@@ -55,7 +55,7 @@ let answers = [];
 function Result({set}) {
   return (
     <div className="result">
-      <button onClick={() => set(false)}>Отправить заявку</button>
+      <button onClick={() => set(false)}>Заказать бесплатную консультацию</button>
       <svg onClick={() => set(false)} className="close" xmlns="http://www.w3.org/2000/svg" height="1.5vw" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
     </div>
   );
@@ -65,12 +65,19 @@ function Game({set, step, setStep, question, onClickVariant}) {
   return (
     <>
       {step === -1 &&
-        <>
-          <form action="">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <input onClick={() => setStep(0)} type="button" value="asdf"/>
-          </form>
-        </>
+        <div className="form">
+
+
+            <div>
+              <input type="email" placeholder="ВВЕДИТЕ EMAIL" name="mail" id="email"/>
+              <div>
+                <input type="text" placeholder="ВВЕДИТЕ ИМЯ"  name="username" id="username"/>
+                <input type="tel" placeholder="ВВЕДИТЕ ТЕЛЕФОН"  name="tel" id="phone"/>
+              </div>
+            </div>
+
+            <input onClick={() => setStep(0)} pattern="5[0-9]{2}" type="submit" value="Подтвердить" />
+        </div>
       }
       
       
