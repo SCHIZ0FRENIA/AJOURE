@@ -66,17 +66,24 @@ function Game({set, step, setStep, question, onClickVariant}) {
     <>
       {step === -1 &&
         <div className="form">
+            <div className="label">
 
+                <div className="f">
+                    <p>Заполните анкету, для того, чтобы с вами связался менеджер.</p>
+                </div>
+
+                <svg onClick={() => set(false)} className="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
+            </div>
 
             <div>
               <input type="email" placeholder="ВВЕДИТЕ EMAIL" name="mail" id="email"/>
               <div>
                 <input type="text" placeholder="ВВЕДИТЕ ИМЯ"  name="username" id="username"/>
-                <input type="tel" placeholder="ВВЕДИТЕ ТЕЛЕФОН"  name="tel" id="phone"/>
+                <input type="tel" placeholder="ВВЕДИТЕ ТЕЛЕФОН" pattern=""  name="tel" id="phone"/>
               </div>
             </div>
 
-            <input onClick={() => setStep(0)} pattern="5[0-9]{2}" type="submit" value="Подтвердить" />
+            <input onClick={() => setStep(0)} type="submit" value="Подтвердить" />
         </div>
       }
       

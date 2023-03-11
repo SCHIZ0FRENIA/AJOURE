@@ -12,7 +12,7 @@
 }
 
 .form {
-  height: 40vh;
+  height: 27vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -76,7 +76,7 @@ input[type="submit"] {
   color: #EAFFFD;
   border: hidden;
   margin-bottom: 4px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 8px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -179,4 +179,18 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 0 10px 0;
+}
+p{
+    margin-bottom: 1vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2vh;
+}
+
+.form>div.label{
+    flex-direction: row;
+}
+
+div.label>svg {
+    heightL:1vw
 }
