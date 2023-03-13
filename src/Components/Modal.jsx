@@ -79,7 +79,7 @@ function Game({set, step, setStep, question, onClickVariant}) {
               <input type="email" placeholder="ВВЕДИТЕ EMAIL" name="mail" id="email"/>
               <div>
                 <input type="text" placeholder="ВВЕДИТЕ ИМЯ"  name="username" id="username"/>
-                <input type="tel" placeholder="ВВЕДИТЕ ТЕЛЕФОН" pattern=""  name="tel" id="phone"/>
+                <input type="tel" placeholder="ВВЕДИТЕ ТЕЛЕФОН" pattern="375-[0-9]{2}"  name="tel" id="phone"/>
               </div>
             </div>
 

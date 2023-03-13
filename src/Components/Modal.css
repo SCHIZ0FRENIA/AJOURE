@@ -188,9 +188,18 @@ p{
 }
 
 .form>div.label{
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.25vh;
 }
 
-div.label>svg {
-    heightL:1vw
+.form>div.label>svg {
+    height:2vw;
+    margin-top: 1vh;
+}
+
+.f>p {
+    font-size: 3vh;
+    font-weight: 500;
 }
