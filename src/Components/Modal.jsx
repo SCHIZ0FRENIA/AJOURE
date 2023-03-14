@@ -50,7 +50,13 @@ const questions = [
   }
 ];
 
-let answers = [];
+let user = {
+  'name': '',
+  'number': '',
+  'email': '',
+  'isCons': true,
+  'answers': []
+};
 
 function Result({set}) {
   return (
@@ -115,7 +121,7 @@ function Modal({setS}) {
   const question = questions[step];
   const onClickVariant = (index) => {
     console.log(step, index);
-    answers[step] = index;
+    user.answers[step] = index;
     setStep(step + 1);
     console.log(answers);
   }
