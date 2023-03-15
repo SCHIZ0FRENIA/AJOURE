@@ -4,7 +4,7 @@ import React from 'react';
 import First from "./Components/First.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import Info from "./Components/Info.jsx";
-
+import Caption from "./Components/Caption.jsx";
 import Advantages from "./Components/Advantages.jsx";
 import './main.css';
 
@@ -13,7 +13,8 @@ root.render(
     <React.StrictMode>
         <Navbar></Navbar>
         <First></First>
-        <Advantages></Advantages>
         <Info></Info>
+        <Caption></Caption>
+        <Advantages></Advantages>
     </React.StrictMode>
 );

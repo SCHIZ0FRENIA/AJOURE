@@ -70,7 +70,7 @@
   width: 45%;
 }
 
-input[type="submit"] {
+.modal input[type="submit"] {
   font-size: 1.7vh;
   text-align: center;
   color: #EAFFFD;
@@ -88,17 +88,17 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.modal input[type="submit"]:hover {
   background-position: right center;
 }
 
 
-ul{
+.modal ul{
   list-style: none;
   padding: 0;
 }
 
-li {
+.modal li {
   font-size: 1.7vh;
   text-align: center;
   color: #EAFFFD;
@@ -116,7 +116,7 @@ li {
   cursor: pointer;
 }
 
-li:hover {
+.modal li:hover {
   background-position: right center;
 }
 
@@ -203,3 +203,11 @@ p{
     font-size: 3vh;
     font-weight: 500;
 }
+
+.choice{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+

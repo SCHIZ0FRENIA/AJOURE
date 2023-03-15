@@ -70,7 +70,7 @@ function Result({set}) {
 function Game({set, step, setStep, question, onClickVariant}) {
   return (
     <>
-      {step === -1 &&
+      {step === -2 &&
         <div className="form">
             <div className="label">
 
@@ -89,12 +89,27 @@ function Game({set, step, setStep, question, onClickVariant}) {
               </div>
             </div>
 
-            <input onClick={() => setStep(0)} type="submit" value="Подтвердить" />
+            <input onClick={() => setStep(-1)} type="submit" value="Подтвердить" />
         </div>
+      }
+
+      {step === -1 &&
+          <div className="choose">
+
+              <div className="upper">
+                  <h1>Вы желаете заказать консультацию или уже знаете чего хотите от нас?</h1>
+                  <svg onClick={() => set(false)} className="close" xmlns="http://www.w3.org/2000/svg" height="1.5vw" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
+              </div>
+
+              <div className="choice">
+                  <input onClick={() => set(false)} type="submit" value="Заказать консультацию" />
+                  <input onClick={() => setStep(0)} type="submit" value="Выбор услуги" />
+              </div>
+          </div>
       }
       
       
-      {step !== -1 &&
+      {(step !== -1 && step !== -2) &&
           <>
             <div className="upper">
               <h1>{question.title}</h1>
@@ -116,7 +131,7 @@ function Game({set, step, setStep, question, onClickVariant}) {
 }
 
 function Modal({setS}) {
-  const [step, setStep] = React.useState(-1);
+  const [step, setStep] = React.useState(-2);
   const func = (x) => {setStep(x)};
   const question = questions[step];
   const onClickVariant = (index) => {
@@ -127,7 +142,7 @@ function Modal({setS}) {
   }
   return (
       <div className="overlay">
-        <div className="App">
+        <div className="App modal">
           {step !== questions.length ? (<Game set={setS} step={step} setStep={func} question={question} onClickVariant={onClickVariant} />) : (<Result set={setS} />)}
         </div>
       </div>
