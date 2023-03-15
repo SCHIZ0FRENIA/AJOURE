@@ -136,7 +136,7 @@ function Modal({setS}) {
   }
   return (
       <div className="overlay">
-        <div className="App">
+        <div className="App modal">
           {step !== questions.length ? (<Game set={setS} step={step} setStep={func} question={question} onClickVariant={onClickVariant} />) : (<Result set={setS} />)}
         </div>
       </div>
