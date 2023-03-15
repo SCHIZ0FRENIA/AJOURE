@@ -5,10 +5,16 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    overflow: visible;
 }
 
 ::-webkit-scrollbar {
     width: 0;
+    height: 0;
+}
+
+body {
+    overflow-x: hidden !important;
 }
 
 .element::-webkit-scrollbar { width: 0; }
