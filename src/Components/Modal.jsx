@@ -54,15 +54,26 @@ let user = {
   'name': '',
   'number': '',
   'email': '',
-  'isCons': true,
-  'answers': []
+  'isCons': true
 };
 
+let data = () => {
+  user.name = document.querySelector('#username').value;
+  user.number = document.querySelector('#phone').value;
+  user.email = document.querySelector('#email').value;
+}
+
+let answers = []
+
 function Result({set}) {
+  if(user.isCons = true){
+    user.answers = answers;
+    console.log(user);
+  }
   return (
     <div className="result">
       <button onClick={() => set(false)}>Заказать бесплатную консультацию</button>
-      <svg onClick={() => set(false)} className="close" xmlns="http://www.w3.org/2000/svg" height="1.5vw" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
+      <svg onClick={() => {set(false); answers = []}} className="close" xmlns="http://www.w3.org/2000/svg" height="1.5vw" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
     </div>
   );
 }
@@ -78,7 +89,7 @@ function Game({set, step, setStep, question, onClickVariant}) {
                     <p>Заполните анкету, для того, чтобы с вами связался менеджер.</p>
                 </div>
 
-                <svg onClick={() => set(false)} className="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
+                <svg onClick={() => {set(false); answers = []}} className="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
             </div>
 
             <div>
@@ -89,7 +100,7 @@ function Game({set, step, setStep, question, onClickVariant}) {
               </div>
             </div>
 
-            <input onClick={() => setStep(-1)} type="submit" value="Подтвердить" />
+            <input onClick={() => {setStep(-1); data()}} type="submit" value="Подтвердить" />
         </div>
       }
 
@@ -98,11 +109,11 @@ function Game({set, step, setStep, question, onClickVariant}) {
 
               <div className="upper">
                   <h1>Вы желаете заказать консультацию или уже знаете чего хотите от нас?</h1>
-                  <svg onClick={() => set(false)} className="close" xmlns="http://www.w3.org/2000/svg" height="1.5vw" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
+                  <svg onClick={() => {set(false); answers = []}} className="close" xmlns="http://www.w3.org/2000/svg" height="1.5vw" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
               </div>
 
               <div className="choice">
-                  <input onClick={() => set(false)} type="submit" value="Заказать консультацию" />
+                  <input onClick={() => {set(false); user.isCons = false; console.log(user)}} type="submit" value="Заказать консультацию" />
                   <input onClick={() => setStep(0)} type="submit" value="Выбор услуги" />
               </div>
           </div>
@@ -113,7 +124,7 @@ function Game({set, step, setStep, question, onClickVariant}) {
           <>
             <div className="upper">
               <h1>{question.title}</h1>
-              <svg onClick={() => set(false)} className="close" xmlns="http://www.w3.org/2000/svg" height="1.5vw" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
+              <svg onClick={() => {set(false); answers = []}} className="close" xmlns="http://www.w3.org/2000/svg" height="1.5vw" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
             </div>
 
             <ul>
@@ -136,7 +147,7 @@ function Modal({setS}) {
   const question = questions[step];
   const onClickVariant = (index) => {
     console.log(step, index);
-    user.answers[step] = index;
+    answers[step] = index;
     setStep(step + 1);
     console.log(answers);
   }
