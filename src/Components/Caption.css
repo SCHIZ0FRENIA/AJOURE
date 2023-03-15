@@ -44,3 +44,7 @@
 .ul li:first-letter{
     text-transform: uppercase;
 }
+
+.caption ul li{
+    list-style-type: square;
+}

@@ -11,11 +11,10 @@ import './main.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-
         <Navbar></Navbar>
         <First></First>
+        <Info></Info>
         <Caption></Caption>
         <Advantages></Advantages>
-        <Info></Info>
     </React.StrictMode>
 );

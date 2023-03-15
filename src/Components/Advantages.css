@@ -1,6 +1,6 @@
 .second {
     height: 150vh;
-    padding: 5vw 4.4vw 0 4.5vw;
+    padding: 0 4.4vw 0 4.5vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
