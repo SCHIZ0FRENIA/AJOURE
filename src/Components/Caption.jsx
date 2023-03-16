@@ -4,7 +4,7 @@ import react from "react";
 class Caption extends react.Component {
     render(){
         return (
-            <div className="caption">
+            <div className="caption" id="caption">
                 <h1>Описание услуг</h1>
 
                 <div className="firstBl">

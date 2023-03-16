@@ -4,7 +4,7 @@ import react from "react";
 class Info extends react.Component {
     render(){
         return(
-            <div className="about">
+            <div className="about" id="info">
                 <h1>О компании</h1>
 
                 <h2>- Компания АЖУР инкам</h2>
@@ -12,7 +12,7 @@ class Info extends react.Component {
 
                 <h2>- Консультации:</h2>
                 <p>&nbsp;   Наши Клиенты могут проконсультироваться по вопросам развития бизнеса и безопасности с собственником нашей компании Катериной Горбовой, которая является экспертом в этой области и имеет в соцсетях аудиторию более 30 тысяч подписчиков.</p>
-               </div>
+            </div>
         )
     }
 }

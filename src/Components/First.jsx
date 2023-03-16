@@ -6,7 +6,7 @@ import './First.css';
 class First extends React.Component {
     render(){
         return(
-            <div className="first">
+            <div className="first" id="first">
                 <div className="head">
                     <h1 className="greeting">Вас приветствует Ажур Инкам</h1>
                     <Button name='оставить заявку'></Button>

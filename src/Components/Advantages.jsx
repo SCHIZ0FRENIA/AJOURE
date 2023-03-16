@@ -14,7 +14,7 @@ function element(id) {
     let [visible, setVisible] = react.useState(false);
 
     return(
-        <div onMouseOver={() => setVisible(true)} onMouseOut={() => setVisible(false)} className={"info " + (visible ? "on": "out")}>
+        <div id="advantages" onMouseOver={() => setVisible(true)} onMouseOut={() => setVisible(false)} className={"info " + (visible ? "on": "out")}>
             <div className={"label1" + (visible ? " show": "")}>{id[0]}</div>
             {visible &&
                 <div className="label2">{id[1]}</div>

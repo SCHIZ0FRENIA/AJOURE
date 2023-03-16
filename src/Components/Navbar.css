@@ -10,6 +10,11 @@
     z-index: 300;
 }
 
+a {
+    text-decoration: none;
+    color: #EAFFFD;
+}
+
 .image {
     height: 10vh;
 }
