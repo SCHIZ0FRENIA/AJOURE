@@ -25,7 +25,7 @@ footer li {
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-
+    user-select: all;
     list-style-type: none;
     background: transparent;
 }

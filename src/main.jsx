@@ -7,6 +7,7 @@ import Info from "./Components/Info.jsx";
 import Caption from "./Components/Caption.jsx";
 import Advantages from "./Components/Advantages.jsx";
 import Footer from "./Components/Footer.jsx";
+import Admin from "./Admin/Admin.jsx";
 import './main.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,5 +19,6 @@ root.render(
         <Caption></Caption>
         <Advantages></Advantages>
         <Footer></Footer>
+        <Admin></Admin>
     </React.StrictMode>
 );
