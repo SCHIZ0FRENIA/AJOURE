@@ -1,5 +1,27 @@
-import './Modal.css';
 import React from 'react';
+import axios from 'axios';
+
+import './Modal.css';
+
+let user = {
+  'name': '',
+  'number': '',
+  'email': '',
+  'isCons': true
+};
+
+let answers = [];
+
+function fetchUser() {
+  try {
+    axios.post('http://localhost:7777/client/add', user); 
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  answers = [];
+};
+
 const questions = [
     {
     title: '1. Организационно-правовая форма:',
@@ -50,20 +72,11 @@ const questions = [
   }
 ];
 
-let user = {
-  'name': '',
-  'number': '',
-  'email': '',
-  'isCons': true
-};
-
 let data = () => {
   user.name = document.querySelector('#username').value;
   user.number = document.querySelector('#phone').value;
   user.email = document.querySelector('#email').value;
 }
-
-let answers = []
 
 function Result({set}) {
   if(user.isCons = true){
@@ -72,7 +85,7 @@ function Result({set}) {
   }
   return (
     <div className="result">
-      <button onClick={() => set(false)}>Заказать бесплатную консультацию</button>
+      <button onClick={() => {set(false); fetchUser(user)}}>Заказать бесплатную консультацию</button>
       <svg onClick={() => {set(false); answers = []}} className="close" xmlns="http://www.w3.org/2000/svg" height="1.5vw" viewBox="0 96 960 960" width="48"><path d="M249 854.739 201.261 807l231-231-231-231L249 297.261l231 231 231-231L758.739 345l-231 231 231 231L711 854.739l-231-231-231 231Z"/></svg>
     </div>
   );
@@ -113,7 +126,7 @@ function Game({set, step, setStep, question, onClickVariant}) {
               </div>
 
               <div className="choice">
-                  <input onClick={() => {set(false); user.isCons = false; console.log(user)}} type="submit" value="Заказать консультацию" />
+                  <input onClick={() => {set(false); user.isCons = false; console.log(user); fetchUser(user)}} type="submit" value="Заказать консультацию" />
                   <input onClick={() => setStep(0)} type="submit" value="Выбор услуги" />
               </div>
           </div>
