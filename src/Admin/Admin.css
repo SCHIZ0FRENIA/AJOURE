@@ -1,0 +1,20 @@
+.admin {
+    width: 100vw;
+}
+
+.admin table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin .client {
+    height: 7vh;
+}
+
+.admin td{
+    border: black 2px solid;
+}
+
+.admin th{
+    border: black 2px solid;
+}

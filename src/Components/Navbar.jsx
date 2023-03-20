@@ -6,12 +6,14 @@ class Navbar extends React.Component {
             return (
                 <div className="navbar">
                     <div className="logo">
-                        <img className="image" src="/logo-white.png" alt="Image not available(" />
+                        <a href="#first">
+                            <img className="image" src="/logo-white.png" alt="Image not available(" />
+                        </a>
                     </div>
                     <div className="menu">
-                        <div className="opt op2">О компании</div>
-                        <div className="opt op3">Описание услуг</div>
-                        <div className="opt op1">Преимущества</div>
+                        <div className="opt op2"><a href="#info">О компании</a></div>
+                        <div className="opt op3"><a href="#caption">Описание услуг</a></div>
+                        <div className="opt op1"><a href="#advantages">Преимущества</a></div>
                     </div>
                 </div>
             )
