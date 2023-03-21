@@ -12,9 +12,20 @@
 }
 
 .admin td{
-    border: black 2px solid;
+    text-align: center;
+    color: #EAFFFD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 3vh;
+    background: #36064c;
+    height: 10vh;
 }
 
 .admin th{
-    border: black 2px solid;
+    color: #EAFFFD;
+    font-size: 5vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: #300746;
+    height: 10vh;
 }

@@ -93,10 +93,10 @@ function Game({set, step, setStep, question, onClickVariant}) {
             </div>
 
             <div>
-              <input type="email" placeholder="ВВЕДИТЕ EMAIL" name="mail" id="email"/>
+              <input type="email" placeholder="ВВЕДИТЕ EMAIL" required name="mail" id="email"/>
               <div>
-                <input type="text" placeholder="ВВЕДИТЕ ИМЯ"  name="username" id="username"/>
-                <input type="tel" placeholder="ВВЕДИТЕ ТЕЛЕФОН" pattern="375-[0-9]{2}"  name="tel" id="phone"/>
+                <input type="text" placeholder="ВВЕДИТЕ ИМЯ" required  name="username" id="username"/>
+                <input type="tel" placeholder="ВВЕДИТЕ ТЕЛЕФОН" required pattern="375-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"  name="tel" id="phone"/>
               </div>
             </div>
 
