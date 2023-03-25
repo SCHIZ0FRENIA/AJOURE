@@ -33,7 +33,7 @@
 }
 
 #phone:invalid {
-    border: red solid 10px;
+
     background-color: red;
 }
 
@@ -211,3 +211,50 @@ p{
 }
 
 
+@media (max-width: 640px){
+
+  .App {
+    width: 70vw;
+    border-radius: 20px;
+  }
+
+  #username, #phone, #email {
+    height: 4vh;
+  }
+  
+  #username:focus, #phone:focus, #email:focus {
+    height: 4vh;
+  }
+  
+  .form input {
+      font-size: 1vh;
+  }
+  
+  .form>div>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .result svg {
+    margin-top: -1vh;
+    height: 3vh;
+  }
+  
+  h1 {
+    font-size: 5vw;
+  }
+
+  .upper svg{
+    height: 6vw;
+  }
+  
+  .form>div.label>svg {
+      height:6vw;
+      margin-top: 0;
+  }
+  
+  .f>p {
+      font-size: 2vh;
+  }
+}
