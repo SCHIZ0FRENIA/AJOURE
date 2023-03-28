@@ -5,6 +5,9 @@
 .admin table {
     width: 100%;
     border-collapse: collapse;
+    color: #EAFFFD;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .admin .client {
@@ -12,9 +15,13 @@
 }
 
 .admin td{
-    border: black 2px solid;
+    background-color: #43085E;
+    height: 10vh;
+    font-size: 2.5vh;
 }
 
 .admin th{
-    border: black 2px solid;
+    background-color: #36064c;
+    height:10vh;
+    font-size: 4vh;
 }
