@@ -1,3 +1,7 @@
+*{
+    background-color: #43085E;
+}
+
 .admin {
     width: 100vw;
 }
@@ -24,4 +28,34 @@
     background-color: #36064c;
     height:10vh;
     font-size: 4vh;
+}
+
+.consButton {
+    font-size: 1.7vh;
+    text-align: center;
+    color: #EAFFFD;
+    border: hidden;
+    margin-bottom: 4px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(30deg, #6B0C97 0%, #500971 51%, #6B0C97 100%);
+    background-size: 200% auto;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.consButton:hover {
+    background-position: right center;
+}
+
+.consButton:disabled {
+    opacity: 0.5;
+}
+
+.consButton:disabled:hover {
+    background-position: 0 0 ;
 }

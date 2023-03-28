@@ -11,30 +11,22 @@ class Admin extends react.Component {
             name: "Иванов Иван Иванович",
             phone: "+375445584321",
             consultation: true
-        },{
-            id: 1,
-            name: "Иванов Иван Иванович",
-            phone: "+375445584321",
-            consultation: true
-        },{
-            id: 1,
-            name: "Иванов Иван Иванович",
-            phone: "+375445584321",
-            consultation: true
-        },{
-            id: 1,
-            name: "Иванов Иван Иванович",
-            phone: "+375445584321",
-            consultation: true
-        },{
-            id: 1,
-            name: "Иванов Иван Иванович",
-            phone: "+375445584321",
-            consultation: true
         },
         {
             id: 2,
             name: "Петров Петр Петрович",
+            phone: "+375445584321",
+            consultation: false
+        },
+        {
+            id: 3,
+            name: "Сидоров Сидор Сидорович",
+            phone: "+375445584321",
+            consultation: true
+        },
+        {
+            id: 4,
+            name: "Александров Александр Александрович",
             phone: "+375445584321",
             consultation: false
         }
@@ -52,11 +44,11 @@ class Admin extends react.Component {
                                     <td>{i.phone}</td>
                                     <td>
                                         {i.consultation &&
-                                            <input type="button" value="Информация"/>
+                                            <input className='consButton' type="button" value="Информация"/>
                                         }
 
                                         {!i.consultation &&
-                                            <input type="button" value="Информация" disabled/>
+                                            <input className='consButton' type="button" value="Информация" disabled/>
                                         }
                                     </td>
                                 </tr>
