@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import './main.css';
 import Admin from "./Admin/Admin.jsx";
+import PassComponent from "./Admin/passComponent.jsx";
 
 const router = createBrowserRouter([
     {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/manager",
-        element: <Admin />,
+        element: <PassComponent/>,
     },
 ]);
 
