@@ -50,6 +50,10 @@
     cursor: pointer;
 }
 
+.admin .tele {
+    user-select: all;
+}
+
 .consButton:hover {
     background-position: right center;
 }
