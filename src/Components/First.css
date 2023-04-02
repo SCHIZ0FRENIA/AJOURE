@@ -23,3 +23,24 @@
     justify-self: flex-end;
 }
 
+@media (max-width: 907px) {
+    .first {
+        padding: 10vh 10vw 0 10vw;
+    }
+    .first img {
+        display: none;
+    }
+    .head{
+        margin: auto auto;
+    }
+    .button{
+        width: 75%;
+        text-align: center;
+        font-size: 3vh;
+    }
+    .greeting {
+        font-size: 3vh;
+        letter-spacing: 2px;
+        margin-top: 5vh;
+    }
+}
