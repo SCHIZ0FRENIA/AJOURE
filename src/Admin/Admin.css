@@ -1,10 +1,19 @@
+*{
+
+}
+
 .admin {
     width: 100vw;
+    min-height: 100vh;
+    background-color: #43085E;
 }
 
 .admin table {
     width: 100%;
     border-collapse: collapse;
+    color: #EAFFFD;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .admin .client {
@@ -12,9 +21,73 @@
 }
 
 .admin td{
-    border: black 2px solid;
+    background-color: #43085E;
+    height: 10vh;
+    font-size: 2.5vh;
 }
 
 .admin th{
-    border: black 2px solid;
+    background-color: #36064c;
+    height:10vh;
+    font-size: 4vh;
+}
+
+.consButton {
+    font-size: 1.7vh;
+    text-align: center;
+    color: #EAFFFD;
+    border: hidden;
+    margin-bottom: 4px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(30deg, #6B0C97 0%, #500971 51%, #6B0C97 100%);
+    background-size: 200% auto;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.admin .tele {
+    user-select: all;
+}
+
+.consButton:hover {
+    background-position: right center;
+}
+
+.consButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.consButton:disabled:hover {
+    background-position: 0 0 ;
+}
+
+div.modal>ul>li.variant {
+    margin-bottom: 10px;
+    background: #36064c;
+    cursor: auto;
+    text-align: left;
+}
+
+div.modal>ul>li.variant>h3 {
+    font-size: 3vh;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+div.modal>ul>li.variant>p {
+    font-size: 2vh;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+div.modal>ul{
+    padding: 5vh 10vw;
 }
