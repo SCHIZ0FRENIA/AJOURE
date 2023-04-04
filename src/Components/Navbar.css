@@ -34,7 +34,7 @@ a {
 }
 
 .opt {
-    font-size: 1vw;
+    font-size: 1vh;
     margin-bottom: auto;
     margin-top: auto;
     color: #EAFFFD;
@@ -49,3 +49,12 @@ a {
     color: #ffffff;
 }
 
+@media (max-width: 907px) {
+    .menu {
+        width: 65vw;
+    }
+    .opt {
+        font-size: 1.25vh;
+        letter-spacing: 1px;
+    }
+}
