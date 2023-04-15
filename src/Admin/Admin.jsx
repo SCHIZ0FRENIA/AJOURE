@@ -168,9 +168,14 @@ function Admin(){
                         }
 
                         { isConfirm &&
-                            <li onClick={()=>{setConfirm(0);}}>
-                                подтвердить удаление
-                            </li>
+                            <>
+                                <li onClick={()=>{setConfirm(0);}}>
+                                    подтвердить удаление
+                                </li>
+                                <li onClick={()=>{setConfirm(0);}}>
+                                    отменить удаление
+                                </li>
+                            </>
                         }
 
                         <li onClick={() => {setModal(0)}}>
