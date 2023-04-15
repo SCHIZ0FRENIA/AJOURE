@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: #36064C;
+    background: #d4d0c7;
 }
 
 .label1{
@@ -25,13 +25,12 @@
     width: 35vw;
     margin: 0 5vw  2.5vw 5vw;
     text-decoration: none;
-    color: #EAFFFD;
+    color: #eeeeee;
     border-radius: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: #780EAA;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     display: flex;
     flex-direction: column;
@@ -47,28 +46,18 @@
     }
 }
 
-@keyframes showW {
-    from{
-        opacity: 0;
-    }
-
-    to{
-        opacity: 1;
-    }
-}
-
 .on {
     animation: on .7s 1 forwards;
 }
 
 @keyframes on {
     from{
-        background: #43085E;
-        color: #EAFFFD;
+        background: #015c7b;
+        color: #eeeeee;
     }
     to{
-        background: #EAFFFD;
-        color: black;
+        background:  #eeeeee ;
+        color: #000000;
     }
 }
 
@@ -78,13 +67,13 @@
 
 @keyframes out {
     from{
-        background: #EAFFFD;
-        color: black;
+        background:  #008dab ;
         opacity: 0;
+        color: #000000;
     }
     to{
-         background: #43085E;
-         color: #EAFFFD;
+         background: #015c7b;
          opacity: 1;
+        color: #eeeeee;
     }
 }

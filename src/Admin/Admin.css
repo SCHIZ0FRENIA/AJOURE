@@ -5,7 +5,7 @@
 .admin {
     width: 100vw;
     min-height: 100vh;
-    background-color: #43085E;
+    background-color: #015c7b;
 }
 
 .admin table {
@@ -21,13 +21,13 @@
 }
 
 .admin td{
-    background-color: #43085E;
+    background-color: #008dab;
     height: 10vh;
     font-size: 2.5vh;
 }
 
 .admin th{
-    background-color: #36064c;
+    background-color:#015c7b;
     height:10vh;
     font-size: 4vh;
 }
@@ -44,7 +44,7 @@
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-image: linear-gradient(30deg, #6B0C97 0%, #500971 51%, #6B0C97 100%);
+    background-image:  linear-gradient(30deg, #015c7b 0%, #008dab 51%, #015c7b 100%);
     background-size: 200% auto;
     transition: .5s;
     cursor: pointer;

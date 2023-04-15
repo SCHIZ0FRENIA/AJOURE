@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgba(54, 6, 76, 0.9);
+    background: linear-gradient(90deg, rgba(1, 92, 123, 0.9) 40%, rgba(0, 141, 171, 0.9) 100%);
     height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,7 @@
 
 a {
     text-decoration: none;
-    color: #EAFFFD;
+    color:#eee;
 }
 
 .image {
@@ -37,7 +37,7 @@ a {
     font-size: 1vh;
     margin-bottom: auto;
     margin-top: auto;
-    color: #EAFFFD;
+    color: #000000;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     text-transform: uppercase;
@@ -46,7 +46,7 @@ a {
 }
 
 .opt:hover {
-    color: #ffffff;
+    color: #000000;
 }
 
 @media (max-width: 907px) {

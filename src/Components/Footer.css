@@ -1,6 +1,6 @@
 footer{
     height: 10vh;
-    background-color: #300746;
+    background: #015c7b;
 }
 
 footer .row{
@@ -21,7 +21,7 @@ footer .column{
 }
 
 footer li {
-    color: #EAFFFD;
+    color: #eeeeee;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
