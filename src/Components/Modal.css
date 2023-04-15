@@ -95,10 +95,11 @@
 
 .modal ul{
   list-style: none;
-  padding: 0;
+  padding: 0 !important;
 }
 
 .modal li {
+  width: 30vw;
   font-size: 1.7vh;
   text-align: center;
   color: #EAFFFD;
@@ -211,11 +212,17 @@ p{
 }
 
 
-/* @media (max-width: 907px){
+@media (max-width: 907px){
 
   .App {
     width: 70vw;
     border-radius: 20px;
+  }
+
+  .modal li {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;  
   }
 
   #username, #phone, #email {
@@ -257,7 +264,5 @@ p{
   .f>p {
       font-size: 2vh;
   }
-
+  
 }
-} */
-
