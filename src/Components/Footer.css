@@ -29,3 +29,17 @@ footer li {
     list-style-type: none;
     background: transparent;
 }
+
+@media (max-width: 907px){
+    footer .row{
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        height: 100%;
+    }
+    footer li{
+        font-size: 3.5vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
