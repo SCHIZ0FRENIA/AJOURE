@@ -21,9 +21,14 @@
 }
 
 .admin td{
-    background-color: #008dab;
+    /* #008dab */
+    background-color: #015c7b;
     height: 10vh;
     font-size: 2.5vh;
+}
+
+tr.client{ 
+    border-top:2px solid #eeeeee;
 }
 
 .admin th{
