@@ -13,6 +13,7 @@
 a {
     text-decoration: none;
     color:#eee;
+    font-size: 15px;
 }
 
 .image {
@@ -50,6 +51,9 @@ a {
 }
 
 @media (max-width: 907px) {
+    a   {
+        font-size: 13px;
+    }
     .logo {
         margin-left:0;
     }
